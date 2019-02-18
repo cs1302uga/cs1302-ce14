@@ -60,10 +60,11 @@ command depends on your present working directory), then please note that contex
 1. Run the `cs1302.ce14.Driver` class.
 
 1. Generate and host the API documentation website for the code contained in this exercise.
-   Use the `-link` option with the `javadoc` command to automatically link external types (e.g., `Object`)
-   to the official Oracle API documentation website
+
+   1. When generating the website, use the `-link` option with the `javadoc` command to 
+   automatically link external types (e.g., `Object`) to the official Oracle API documentation website
    [here](https://docs.oracle.com/javase/8/docs/api).
-   What is the full URL for the API documentation for the `checkNull` method?
+   1. What is the full URL for the API documentation for the `checkNull` method?
 
 1. Commit the changes to your local copy of the exercise repository. 
    Be sure to include a good log message.
