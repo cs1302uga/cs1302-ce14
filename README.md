@@ -38,7 +38,6 @@ command depends on your present working directory), then please note that contex
 
    1. What is the minimum number of parameters that can be used when invoking this method?
       Provide an example.
-      
    1. What kind of references are allowed for the variadic parameter of this method? 
       List two two or three examples.
    
