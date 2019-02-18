@@ -8,7 +8,7 @@ This class exercise covers introduces the reader to generic methods and .
 
 * Basic knowledge of Java Generics.
 * [Oracle: Generic Methods](https://docs.oracle.com/javase/tutorial/extra/generics/methods.html)
-* [Oracke: Bounded Type Parameters](https://docs.oracle.com/javase/tutorial/java/generics/bounded.html)
+* [Oracle: Bounded Type Parameters](https://docs.oracle.com/javase/tutorial/java/generics/bounded.html)
 
 ## Questions
 
