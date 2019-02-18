@@ -88,14 +88,18 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
-1.  
+1. Introduce `Arrays.sort`
+
+1. Have students implement `Comparator` to sort `Employee` objects by `name`.
 
 1. Commit the changes to your local copy of the exercise repository.
    Be sure to include a good log message.
 
 **CHECKPOINT**
 
-1. 
+1. Introduce lambda expression.
+
+1. Have students implement `Comparator` using lambdas to sort `Employee` objects by `name`, `id`, and `age`.
 
 1. View the output of a condensed, graphical version of the Git log.
 
