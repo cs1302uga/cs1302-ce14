@@ -45,27 +45,12 @@ command depends on your present working directory), then please note that contex
    the same type or below a specific type in a hierarchy. Your implementation should only
    require a simple generic type parameter. To avoid confusion with the type parameter
    of the `cs1302.ce14.Container` class, please call this method's type parameter `U`
-   instead of `T`.
+   instead of `T`. Also rewrite all calls to `checkNull` in other files so that they explicitly 
+   paramterize `U` to the appropriate type.
    
 1. Compile all of the code, including your modified `Utility` class, using `bin` as the default package
    for compiled code. Make sure you compile the classes in the proper order considering the dependencies. 
    If you encounter any compilation errors:
-   
-   1. Look at the first error reported by `javac`;
-   1. Write the error down in your notes;
-   1. Fix the error in the code using type casting;
-   1. Recompile;
-   1. Note the fix in your notes; then
-   1. Repeat as needed. 
-   
-1. Did you need to make any changes to other files in the previous step?
-   If so, indicate that here and draw an arrow to the substep(s) of the previous step
-   where you indicated those changes/fixes. It's entirely possible that you did not.
-
-1. Right now, the calls to `checkNull` in `Container` are unparameterized, which means that
-   the compilers attempts to infer the specific type for the type parameter based on the
-   method's inputs. Rewrite the calls to `checkNull` so that they explicitly paramterize
-   `U` to the appropriate type. Try to compile. If you encounter any compilation errors:
    
    1. Look at the first error reported by `javac`;
    1. Write the error down in your notes;
