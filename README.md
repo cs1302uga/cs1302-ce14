@@ -7,7 +7,7 @@ This class exercise covers introduces the reader to TBD.
 ## Prerequisite Knowledge
 
 * Basic knowledge of Java Generics.
-* [Git Glossary](https://mirrors.edge.kernel.org/pub/software/scm/git/docs/gitglossary.html)
+* [Oracle: Generic Methods](https://docs.oracle.com/javase/tutorial/extra/generics/methods.html)
 
 ## Questions
 
