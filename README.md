@@ -44,7 +44,7 @@ command depends on your present working directory), then please note that contex
 1. Rewrite and document the `checkNull` method so that it only accepts references that either
    the same type or below a specific type in a hierarchy. Your implementation should only
    require a simple generic type parameter. To avoid confusion with the type parameter
-   of the `cs1302.ce14.Container` class, please call this function's type parameter `U`
+   of the `cs1302.ce14.Container` class, please call this method's type parameter `U`
    instead of `T`.
    
 1. Compile all of the code, including your modified `Utility` class, using `bin` as the default package
