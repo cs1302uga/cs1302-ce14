@@ -34,33 +34,39 @@ command depends on your present working directory), then please note that contex
    $ find src
    ```
 
-   For each Java file under the `src` subdirectory, fill out a table similar to the following:
-   
-   | File Name | Java Type? | FQN | Depends On |
-   |-----------|------------|-----|------------|
-   |-----------|------------|-----|------------|
-   |-----------|------------|-----|------------|
-   |-----------|------------|-----|------------|
+1. Examine the static `checkNull` method in the `cs1302.ce14.Utility` class. 
 
-   The "Java Type" column should list the outermost type in the file (e.g., class, interface, enum, etc). 
-   The "Depends On" column should list any Java types in the starter code that the file
-   is dependent upon.
+   1. What is the minimum number of parameters that can be used when invoking this method?
+      Provide an example.
+      
+   1. What kind of references are allowed for the variadic parameter of this method? 
+      List two two or three examples.
    
-1. In your notes, draw a complete, proper UML diagram for all of the code contained in the
-   starter code. You might need to devote an entire page to this. We recommend using a pencil.
-   Be sure to include generalization (`extends`), realization (`implements`), and 
-   dependency arrows. Do not list inherited members unless they are explicitly overriden.
+1. Rewrite and document the `checkNull` method so that it only accepts references that either
+   the same type or below a specific type in a hierarchy. Your implementation should only
+   require a simple generic type parameter.
+   
+1. Compile all of the code, including your modified `Utility` class, using `bin` as the default package
+   for compiled code. Make sure you compile the classes in the proper order considering the dependencies. 
+   If you encounter any compilation errors:
+   
+   1. Look at the first error reported by `javac`;
+   1. Write the error down in your notes;
+   1. Fix the error in the code using type casting;
+   1. Recompile;
+   1. Note the fix in your notes; then
+   1. Repeat as needed. 
 
-1. Execute the command to generate the API documentation website for the conde contained in this exercise
-   and place it in the `doc` subdirectory.
+1. Run the `cs1302.ce14.Driver` class.
+
+1. Generate and host the API documentation website for the code contained in this exercise.
    Use the `-link` option with the `javadoc` command to automatically link external types (e.g., `Object`)
    to the official Oracle API documentation website
    [here](https://docs.oracle.com/javase/8/docs/api).
-   Be sure to write the full command in your notes.
+   What is the full URL for the API documentation for the `checkNull` method?
 
-1. 
-
-1. Commit the changes to your local copy of the exercise repository. Be sure to include a good log message.
+1. Commit the changes to your local copy of the exercise repository. 
+   Be sure to include a good log message.
 
 **CHECKPOINT**
 
