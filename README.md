@@ -47,7 +47,7 @@ command depends on your present working directory), then please note that contex
       List two two or three examples.
    
 1. Rewrite and document the `checkNull` method so that it only accepts references that are either all
-   the same type or all below a specific type in a hierarchy. **Keep the following in mind:
+   the same type or all below a specific type in a hierarchy. **Keep the following in mind:**
    Your implementation should only require a simple generic type parameter -- an upper bound is not needed.
    You will need to also rewrite all calls to `checkNull` in other files so that they explicitly 
    paramterize the method to the appropriate type. No raw types!
