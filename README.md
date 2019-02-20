@@ -114,8 +114,8 @@ command depends on your present working directory), then please note that contex
    to list the contents as well as its output. The API documentation for the compiled code contained in this
    file can be found [here](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce14-api/).
    
-1. Examine the [`ArrayUtility.sort`](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce14-api/cs1302/util/ArrayUtility.html#sort-T:A-)
-   method overload in the `cs1302.util.ArrayUtility` API documentation.
+1. Examine the [`ArrayUtility.sort(T[])`](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce14-api/cs1302/util/ArrayUtility.html#sort-T:A-)
+   method overload in the `cs1302.util.ArrayUtility` API documentation. Actually read the documentation.
    In your notes, answer the following:
    
    1. What is the complete signature for this method?
@@ -144,9 +144,38 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
-1. Similarly for the overload that takes a comparator.
+1. In the previous checkpoint, you were able to modify the `Circle` class so that arrays of
+   circles can be sorted using `ArrayUtility.sort`. However, consider what yould happen if
+   you now wanted to sort according to a different ordering (e.g., area or permiter). You
+   would have to edit `Circle.java` again! This is where the other overload for `sort` 
+   comes into play. Examine the 
+   [`ArrayUtility.sort(T[], Comparator<T>)`](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce14-api/cs1302/util/ArrayUtility.html#sort-T:A-java.util.Comparator-)
+   method overload in the `cs1302.util.ArrayUtility` API documentation.
+   Actually read the documentation.
+   In your notes, answer the following:
+   
+   1. What is the complete signature for this method?
+   1. What is the datatype and role of each method parameter?
+   1. Suppose you want to parameterize `T` (i.e., replace it with some specific type). What requirement must that type satisfy?
+   1. What other questions do you have related to this method?
 
+1. **[TRICKY]** _Read this entire step, including substeps, very carefully before attempting it._ 
+   Create a class called `AreaComparator` in the `cs1302.ce14` package that correctly
+   implements the comparator required for the overloaded `ArrayUtility.sort` when parameterized 
+   to operate on arrays of type `Circle`. The induced ordering for `Circle` objects here should
+   be based on their area values, in descending (decreasing) order. 
 
+   * As you attempt this, remember that the goal is to allow you to sort arrays of circles using
+     `ArrayUtility.sort` by some other ordering criteriaa **without modifying `Circle.java`. This
+	 involved creating a proper class for the comparator, then calling the `sort` method with
+	 and object of that comparator class. You can test whether or not the comparator class is
+	 snytactically correct by calling the overloaded `ArrayUtility.sort` on the array referred to 
+	 by `circles` in your `Driver` class's `main` method. You will know that it works 
+     when the `Driver` class compiles.
+	 
+   * Once you are sure that comparator class is syntactially correct, then you can test that your
+	 comparator's induced ordering is correct by looping through the array referred to by `circles` and 
+	 printing out the return value of `getArea()`. This should be done after your call to `sort`.
 
 1. Commit the changes to your local copy of the exercise repository.
    Be sure to include a good log message.
