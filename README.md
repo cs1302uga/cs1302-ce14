@@ -1,3 +1,4 @@
+
 # cs1302-ce14 TBD
 
 > Quote TBD
@@ -39,6 +40,8 @@ command depends on your present working directory), then please note that contex
    $ find src
    ```
 
+### Exercise Steps
+
 1. Examine the static `checkNull` method in the `cs1302.Utility` class. 
 
    1. What is the minimum number of parameters that can be used when invoking this method?
@@ -56,6 +59,9 @@ command depends on your present working directory), then please note that contex
    for compiled code. Make sure you compile the classes in the proper order considering the dependencies. 
    If you encounter any compilation errors, then fix them as you go. Be sure to note interesting errors
    in your notes for future reference.
+   
+1. Commit the changes to your local copy of the exercise repository. 
+   Be sure to include a good log message.
    
 1. Write and document a `Driver` class in the `cs1302.ce14` package. The `main` method should adaquately
    demonstrate that your `nullCheck` method only accepts references that are either all
