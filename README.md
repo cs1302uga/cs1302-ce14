@@ -145,8 +145,8 @@ command depends on your present working directory), then please note that contex
 **CHECKPOINT**
 
 1. In the previous checkpoint, you were able to modify the `Circle` class so that arrays of
-   circles can be sorted using `ArrayUtility.sort`. However, consider what yould happen if
-   you now wanted to sort according to a different ordering (e.g., area or permiter). You
+   circles can be sorted using `ArrayUtility.sort`. However, consider what would happen if
+   you now wanted to sort according to a different ordering (e.g., area or perimeter). You
    would have to edit `Circle.java` again! This is where the other overload for `sort` 
    comes into play. Examine the 
    [`ArrayUtility.sort(T[], Comparator<T>)`](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce14-api/cs1302/util/ArrayUtility.html#sort-T:A-java.util.Comparator-)
@@ -166,12 +166,12 @@ command depends on your present working directory), then please note that contex
    be based on their area values, in descending (decreasing) order. 
 
    * As you attempt this, remember that the goal is to allow you to sort arrays of circles using
-     `ArrayUtility.sort` by some other ordering criteriaa **without modifying `Circle.java`. This
+     `ArrayUtility.sort` by some other ordering criteria **without** modifying `Circle.java`. This
 	 involved creating a proper class for the comparator, then calling the `sort` method with
 	 and object of that comparator class. You can test whether or not the comparator class is
 	 snytactically correct by calling the overloaded `ArrayUtility.sort` on the array referred to 
-	 by `circles` in your `Driver` class's `main` method. You will know that it works 
-     when the `Driver` class compiles.
+	 by `circles` in your `Driver` class's `main` method. You will know that it is syntactically correct 
+     	when the `Driver` class compiles.
 	 
    * Once you are sure that comparator class is syntactially correct, then you can test that your
 	 comparator's induced ordering is correct by looping through the array referred to by `circles` and 
