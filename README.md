@@ -64,7 +64,7 @@ command depends on your present working directory), then please note that contex
    Be sure to include a good log message.
    
 1. Write and document a `Driver` class in the `cs1302.ce14` package. The `main` method should adaquately
-   demonstrate that your `nullCheck` method only accepts references that are either all
+   demonstrate that your `checkNull` method only accepts references that are either all
    the same type or all below a specific type in a hierarchy. You may make use of the `Shape`, `Ellipse`,
    and `Circle` classes that are in the same package. Try different statements. **If you do this
    properly, then compile-time errors are expected** when calls to `checkNull` violate the
