@@ -39,7 +39,7 @@ command depends on your present working directory), then please note that contex
    $ find src
    ```
 
-1. Examine the static `checkNull` method in the `cs1302.ce14.Utility` class. 
+1. Examine the static `checkNull` method in the `cs1302.Utility` class. 
 
    1. What is the minimum number of parameters that can be used when invoking this method?
       Provide an example.
@@ -47,14 +47,12 @@ command depends on your present working directory), then please note that contex
       List two two or three examples.
    
 1. Rewrite and document the `checkNull` method so that it only accepts references that are either all
-   the same type or all below a specific type in a hierarchy. Your implementation should only
-   require a simple generic type parameter (i.e., although the wording might lead some to believe an
-   upper bound is required, one is not). To avoid confusion with the type parameter
-   of the `cs1302.ce14.Container` class, please call this method's type parameter `U`
-   instead of `T`. Also rewrite all calls to `checkNull` in other files so that they explicitly 
-   paramterize `U` to the appropriate type. No raw types!
+   the same type or all below a specific type in a hierarchy. **Keep the following in mind:
+   Your implementation should only require a simple generic type parameter -- an upper bound is not needed.
+   You will need to also rewrite all calls to `checkNull` in other files so that they explicitly 
+   paramterize the method to the appropriate type. No raw types!
    
-1. Compile all of the code, including your modified `Utility` class, using `bin` as the default package
+1. Compile *all* of the code, including your modified `Utility` class, using `bin` as the default package
    for compiled code. Make sure you compile the classes in the proper order considering the dependencies. 
    If you encounter any compilation errors:
    
@@ -65,7 +63,29 @@ command depends on your present working directory), then please note that contex
    1. Note the fix in your notes; then
    1. Repeat as needed. 
    
-1. Run the `cs1302.ce14.Driver` class ot make sure everything works as intended.
+1. Write and document a `Driver` class in the `cs1302.ce14` package. The `main` method should adaquately
+   demonstrate that your `nullCheck` method only accepts references that are either all
+   the same type or all below a specific type in a hierarchy. You may make use of the `Shape`, `Ellipse`,
+   and `Circle` classes that are in the same package. Try different statements. **If you do this
+   properly, then compile-time errors are expected** when calls to `checkNull` violate the
+   conditions your earlier modifications adopted. In other words, the changes you made are supposed to
+   prevent the programmer from using your method a particular way. If you encounter any compilation errors:
+   
+   1. Look at the first error reported by `javac`;
+   1. Write down the entire statement that caused the error.
+   1. Write the error message down in your notes;
+   1. In your notes, denote whether or not this error is expected;
+      
+	  1. If **yes**, then keep the line in your code but comment it out, and write down the reason why
+	     it's expecte in your notes.
+	  1. If **no**, then fix the error in the code.
+	  
+   1. Recompile;
+   1. Repeat as needed. 
+   
+   **NOTE:** Your instructor or PLA will look at the list of things you tried. They will not sign off
+   on this checkpoint if you do not do the steps above for each and every error as _errors are expected_
+   if you perform the steps correctly.
 
 1. Generate and host the API documentation website for the code contained in this exercise.
 
