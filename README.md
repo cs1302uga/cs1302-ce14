@@ -12,7 +12,7 @@ This class exercise covers introduces the reader to generic methods and .
 
 ## References
 
-* [`cs1302.ce14.Utility` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce14-api/)]
+* [`cs1302.ce14.Utility` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce14-api/)
 
 ## Questions
 
@@ -78,15 +78,16 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
-1. Examine the [`Arrays.sort`](https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#sort-T:A-java.util.Comparator-)
-   method overload in the Oracle API documentation. The synatax `<? super T>` denotes a 
+1. Examine the [`Utility.sort`](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce14-api/cs1302/ce14/Utility.html#sort-T:A-)
+   method overload in the `cs1302.ce14.Utility` API documentation. The synatax `<? super T>` denotes a 
    [lower bounded wildcard](https://docs.oracle.com/javase/tutorial/java/generics/lowerBounded.html).
    In your notes, answer the following:
    
    1. What is the complete method sigature for this method?
    1. What is the datatype and role of each parameter?
    1. For each generic type parameter, what is the range of types that can replace it?
-   1. 
+   
+1. Based on the following UML diagram, create and document an
 
 1. Have students implement `Comparator` to sort `Employee` objects by `name`.
 
