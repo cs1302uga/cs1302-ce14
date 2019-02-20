@@ -9,7 +9,10 @@ This class exercise covers introduces the reader to generic methods and .
 * Basic knowledge of Java Generics.
 * [Oracle: Generic Methods](https://docs.oracle.com/javase/tutorial/extra/generics/methods.html)
 * [Oracle: Bounded Type Parameters](https://docs.oracle.com/javase/tutorial/java/generics/bounded.html)
-* [Oracle: Lower Bounded Wildcards](https://docs.oracle.com/javase/tutorial/java/generics/lowerBounded.html)
+
+## References
+
+* [`cs1302.ce14.Utility` API Documentation](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce14-api/)]
 
 ## Questions
 
