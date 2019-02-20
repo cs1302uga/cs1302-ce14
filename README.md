@@ -9,6 +9,7 @@ This class exercise covers introduces the reader to generic methods and .
 * Basic knowledge of Java Generics.
 * [Oracle: Generic Methods](https://docs.oracle.com/javase/tutorial/extra/generics/methods.html)
 * [Oracle: Bounded Type Parameters](https://docs.oracle.com/javase/tutorial/java/generics/bounded.html)
+* [Oracle: Lower Bounded Wildcards](https://docs.oracle.com/javase/tutorial/java/generics/lowerBounded.html)
 
 ## Questions
 
@@ -74,7 +75,15 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
-1. Introduce `Arrays.sort`
+1. Examine the [`Arrays.sort`](https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#sort-T:A-java.util.Comparator-)
+   method overload in the Oracle API documentation. The synatax `<? super T>` denotes a 
+   [lower bounded wildcard](https://docs.oracle.com/javase/tutorial/java/generics/lowerBounded.html).
+   In your notes, answer the following:
+   
+   1. What is the complete method sigature for this method?
+   1. What is the datatype and role of each parameter?
+   1. For each generic type parameter, what is the range of types that can replace it?
+   1. 
 
 1. Have students implement `Comparator` to sort `Employee` objects by `name`.
 
@@ -83,11 +92,20 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
-1. Introduce lambda expression.
+1. Examine the [`Arrays.sort`](https://docs.oracle.com/javase/8/docs/api/java/util/Arrays.html#sort-T:A-java.util.Comparator-)
+   method overload in the Oracle API documentation. The synatax `<? super T>` denotes a 
+   [lower bounded wildcard](https://docs.oracle.com/javase/tutorial/java/generics/lowerBounded.html).
+   In your notes, answer the following:
+   
+   1. What is the complete method sigature for this method?
+   1. What is the datatype and role of each parameter?
+   1. For each generic type parameter, what is the range of types that can replace it?
+   1. 
 
-1. Have students implement `Comparator` using lambdas to sort `Employee` objects by `name`, `id`, and `age`.
+1. Have students implement `Comparator` to sort `Employee` objects by `name`.
 
-1. View the output of a condensed, graphical version of the Git log.
+1. Commit the changes to your local copy of the exercise repository.
+   Be sure to include a good log message.
 
 **CHECKPOINT**
 
