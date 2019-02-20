@@ -17,8 +17,8 @@ public class Utility {
      * @throws NullPointerException if any element of parameter
      * {@code o} is {@code null}.
      */
-    public static void checkNull(String method, Object[] o) {
-	for(Object obj: o) {
+    public static <T> void checkNull(String method, T[] o) {
+	for(T obj: o) {
 	    if(obj == null) {
 		String message = method + ": Null Argument Provided";
 		throw new NullPointerException(message);
