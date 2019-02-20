@@ -1,5 +1,7 @@
 package cs1302.ce14;
 
+import cs1302.Utility;
+
 /**
  * This class represents an abstract shape. 
  */
@@ -17,9 +19,8 @@ public abstract class Shape {
      * @throws IllegalArgumentException if {@code name} is an empty string
      */
     protected void setName(String name) {
-	if (name == null) {
-	    throw new NullPointerException("name cannot be null");
-	} else if (name.isEmpty()) {
+	Utility.checkNull(name);
+	if (name.isEmpty()) {
 	    throw new IllegalArgumentException("name cannot be an empty string");
 	} else {
 	    this.name = name;

@@ -1,7 +1,8 @@
 package cs1302;
 
 /** 
- * This class contains a utility method for checking {@code null} values.
+ * This class contains a utility methods for checking the validity of 
+ * input parameters.
  */
 public class Utility {
 
@@ -16,7 +17,7 @@ public class Utility {
      * @throws NullPointerException if any element of parameter 
      * {@code o} is {@code null}.
      */
-    public static void nullCheck(String method, Object ... o) {
+    public static void checkNull(String method, Object ... o) {
 	for(Object obj: o) {
 	    if(o == null) {
 		String message = method + ": Null Argument Provided";
