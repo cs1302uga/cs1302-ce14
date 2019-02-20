@@ -78,8 +78,11 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
+1. You may have noticed a `lib` subdirectory containing `cs1302-ce14.jar`. In your notes, list the contents
+   of this JAR file.
+   
 1. Examine the [`ArrayUtility.sort`](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce14-api/cs1302/util/ArrayUtility.html#sort-T:A-)
-   method overload in the `cs1302.ce14.Utility` API documentation.
+   method overload in the `cs1302.util.ArrayUtility` API documentation.
    In your notes, answer the following:
    
    1. What is the complete method sigature for this method?
@@ -88,7 +91,9 @@ command depends on your present working directory), then please note that contex
    
 1. Based on the following UML diagram, create and document an `Employee` class in the
    `cs1302.ce14` package, specifying `src` as the default package for source code.
-   **OR GIVE THIS TO THEM and HAVE THEM MODIFY TO IMPLEMENT COMPARABLE?**
+   **OR GIVE THIS TO THEM and HAVE THEM MODIFY TO IMPLEMENT COMPARABLE?** -- something like
+   modify the `Employee` class so that arrays of type `Employee[]` can be used by this
+   method. The epected ordering for `Employee` objects is by `name` in ascending (lexicographic) order?
    
 1. Compile.
 
