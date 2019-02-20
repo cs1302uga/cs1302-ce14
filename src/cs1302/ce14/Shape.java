@@ -19,7 +19,7 @@ public abstract class Shape {
      * @throws IllegalArgumentException if {@code name} is an empty string
      */
     protected void setName(String name) {
-	Utility.checkNull(name);
+	Utility.checkNull("setName", new Object[] {name});
 	if (name.isEmpty()) {
 	    throw new IllegalArgumentException("name cannot be an empty string");
 	} else {
