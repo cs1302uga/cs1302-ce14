@@ -52,7 +52,7 @@ command depends on your present working directory), then please note that contex
    You will need to also rewrite all calls to `checkNull` in other files so that they explicitly 
    paramterize the method to the appropriate type. No raw types!
    
-1. Compile *all* of the code, including your modified `Utility` class, using `bin` as the default package
+1. Compile *all of the code*, including your modified `Utility` class, using `bin` as the default package
    for compiled code. Make sure you compile the classes in the proper order considering the dependencies. 
    If you encounter any compilation errors, then fix them as you go. Be sure to note interesting errors
    in your notes for future reference.
