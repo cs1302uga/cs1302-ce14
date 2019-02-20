@@ -92,8 +92,8 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
-1. You may have noticed a `lib` subdirectory containing `cs1302-ce14.jar`. In your notes, list the contents
-   of this JAR file.
+1. You may have noticed `cs1302-ce14.jar` in the `lib` subdirectory. In your notes, write down the command
+   to list the contents as well as its output.
    
 1. Examine the [`ArrayUtility.sort`](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce14-api/cs1302/util/ArrayUtility.html#sort-T:A-)
    method overload in the `cs1302.util.ArrayUtility` API documentation.
