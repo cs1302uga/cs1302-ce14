@@ -75,9 +75,11 @@ command depends on your present working directory), then please note that contex
    1. Write down the entire statement that caused the error.
    1. Write the error message down in your notes;
    1. In your notes, denote whether or not this error is expected;
-	  1. If **yes**, then keep the line in your code but comment it out, and write down the reason why
-	     it's expecte in your notes.
+
+	  1. If **yes**, then keep the line in your code but comment it out, and include the reason why
+	     it's expected in your notes.
 	  1. If **no**, then fix the error in the code.
+	  
    1. Recompile;
    1. Repeat as needed. 
    
