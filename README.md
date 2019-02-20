@@ -92,27 +92,53 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
+1. Delete the code inside of your `Driver` class's `main` method, then commit this change to your 
+   local copy of the exercise repository. Don't worry, you can also checkout what you had before because
+   you committed your earlier changes while working on the previous checkpoint.
+   
+1. Add the following code to your `Driver` class's `main` method, make sure it compiles, then 
+   commit this change to your local copy of the exercise repository.
+   
+   ```java
+   Circle[] circles = new Circle[] {
+	   new Circle(5.0),
+	   new Circle(3.3),
+	   new Circle(4.1),
+	   new Circle(1.2)
+   };
+   ```
+   
+   We will come back to this code in a few steps.
+
 1. You may have noticed `cs1302-ce14.jar` in the `lib` subdirectory. In your notes, write down the command
-   to list the contents as well as its output.
+   to list the contents as well as its output. The API documentation for the compiled code contained in this
+   file can be found [here](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce14-api/).
    
 1. Examine the [`ArrayUtility.sort`](http://cobweb.cs.uga.edu/~mec/cs1302/cs1302-ce14-api/cs1302/util/ArrayUtility.html#sort-T:A-)
    method overload in the `cs1302.util.ArrayUtility` API documentation.
    In your notes, answer the following:
    
-   1. What is the complete method sigature for this method?
-   1. What is the datatype and role of each parameter?
-   1. For each generic type parameter, what is the range of types that can replace it?
+   1. What is the complete signature for this method?
+   1. What is the datatype and role of each method parameter?
+   1. Suppose you want to parameterize `T` (i.e., replace it with some specific type). What requirement must that type satisfy?
+   1. What other questions do you have related to this method?
    
-1. Based on the following UML diagram, create and document an `Employee` class in the
-   `cs1302.ce14` package, specifying `src` as the default package for source code.
-   **OR GIVE THIS TO THEM and HAVE THEM MODIFY TO IMPLEMENT COMPARABLE?** -- something like
-   modify the `Employee` class so that arrays of type `Employee[]` can be used by this
-   method. The epected ordering for `Employee` objects is by `name` in ascending (lexicographic) order?
+1. **[TRICKY]** _Read this entire step, including substeps, very carefully before attempting it._ 
+   Modify the source code for the `Circle` class so that `Circle` satisfies the requirement to 
+   replace `T` when calling `ArrayUtility.sort`. Your modification should result in the induced
+   ordering for `Circle` objects to be based on their radius values, in ascending (increasing)
+   order. 
    
-1. Compile.
-
-1. Create driver to test...
-
+   * As you attempt this, remember that the goal is to allow the `T` to be replaced with `Circle`
+     when calling the `sort` method. This means that you can test whether or not you've done this
+     correctly by appropriately calling `ArrayUtility.sort` on the array referred to by `circles`
+     in your `Driver` class's `main` method. You will know that you satisfy the type requirement
+     when the `Driver` class compiles.
+	 
+   * Once you are sure that the type requirement is being satisfied, you can test that your
+	 induced ordering is correct by looping through the array referred to by `circles` and 
+	 printing out the return value of `getRadius()`. This should be done after your call to `sort`.
+	 
 1. Commit the changes to your local copy of the exercise repository.
    Be sure to include a good log message.
 
