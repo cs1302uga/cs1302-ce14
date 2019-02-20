@@ -54,14 +54,8 @@ command depends on your present working directory), then please note that contex
    
 1. Compile *all* of the code, including your modified `Utility` class, using `bin` as the default package
    for compiled code. Make sure you compile the classes in the proper order considering the dependencies. 
-   If you encounter any compilation errors:
-   
-   1. Look at the first error reported by `javac`;
-   1. Write the error down in your notes;
-   1. Fix the error in the code using type casting;
-   1. Recompile;
-   1. Note the fix in your notes; then
-   1. Repeat as needed. 
+   If you encounter any compilation errors, then fix them as you go. Be sure to note interesting errors
+   in your notes for future reference.
    
 1. Write and document a `Driver` class in the `cs1302.ce14` package. The `main` method should adaquately
    demonstrate that your `nullCheck` method only accepts references that are either all
