@@ -46,12 +46,13 @@ command depends on your present working directory), then please note that contex
    1. What kind of references are allowed for the variadic parameter of this method? 
       List two two or three examples.
    
-1. Rewrite and document the `checkNull` method so that it only accepts references that either
-   the same type or below a specific type in a hierarchy. Your implementation should only
-   require a simple generic type parameter. To avoid confusion with the type parameter
+1. Rewrite and document the `checkNull` method so that it only accepts references that are either all
+   the same type or all below a specific type in a hierarchy. Your implementation should only
+   require a simple generic type parameter (i.e., although the wording might lead some to believe an
+   upper bound is required, one is not). To avoid confusion with the type parameter
    of the `cs1302.ce14.Container` class, please call this method's type parameter `U`
    instead of `T`. Also rewrite all calls to `checkNull` in other files so that they explicitly 
-   paramterize `U` to the appropriate type.
+   paramterize `U` to the appropriate type. No raw types!
    
 1. Compile all of the code, including your modified `Utility` class, using `bin` as the default package
    for compiled code. Make sure you compile the classes in the proper order considering the dependencies. 
