@@ -19,7 +19,7 @@ public class Utility {
      */
     public static void checkNull(String method, Object[] o) {
 	for(Object obj: o) {
-	    if(o == null) {
+	    if(obj == null) {
 		String message = method + ": Null Argument Provided";
 		throw new NullPointerException(message);
 	    } // if
