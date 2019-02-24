@@ -70,18 +70,31 @@ command depends on your present working directory), then please note that contex
       mentioned at the top of this exercise for a potential
 	  solution; 
    1. Fix the error;
-   1. Recompile; and
+   1. Recompile; 
+   1. Stage and commit your changes using Git; and
    1. Repeat as needed. 
    
    **NOTE:** Your instructor or PLA will look at the list of things
    you tried. They will not sign off on this checkpoint if you do 
-   not do the steps above for each and every error.
+   not do the steps above for each and every error. You should have
+   a log entry for each.
 
 1. What is the complete signature of your modified `checkNull`
    method?
    
-1. Commit the changes to your local copy of the exercise repository. 
-   Be sure to include a good log message.
+1. In a previous exercise, you combined the `--all`, `--decorate`,
+   `--oneline`, and `--graph` options with `git log` to produce
+   a condensed, graphical version of the Git log. While you
+   **are expected to remember these options**, it is tiresome to
+   write them out each time. Instead, create a `git adog` command
+   by setting up a Git alias:
+
+   ```
+   $ git config --global alias.adog "log --all --decorate --oneline --graph"
+   ```
+   
+1. What is the entire line of output for the most recent entry produced
+   by your new `git adog` command?
 
 **CHECKPOINT**
 
@@ -109,10 +122,12 @@ command depends on your present working directory), then please note that contex
 	  1. If **no**, then fix the error in the code.
 	  
    1. Recompile;
+   1. Stage and commit your changes using Git; and
    1. Repeat as needed. 
    
    **NOTE:** Your instructor or PLA will look at the list of things
-   you tried. They will not sign off on this checkpoint if you do 
+   you tried. You should have a log entry for each. 
+   They will not sign off on this checkpoint if you do 
    not do the steps above for each and every error as 
    _errors are expected_ if you perform the steps correctly.
 
@@ -120,6 +135,14 @@ command depends on your present working directory), then please note that contex
    Be sure to include a good log message.
 
 **CHECKPOINT**
+
+1. The combination of options for the `git adog` command that you created earlier
+   was popularized by a StackOverflow user named [Patoshi パトシ](https://stackoverflow.com/users/1642231/patoshi-パトシ)
+   in their [reply to another user's post](https://stackoverflow.com/a/35075021).  
+   
+   ![ADOG](https://i.stack.imgur.com/ElVkf.jpg)
+
+**NOT A CHECKPOINT**
 
 <hr/>
 
