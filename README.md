@@ -93,6 +93,8 @@ command depends on your present working directory), then please note that contex
    $ git config --global alias.adog "log --all --decorate --oneline --graph"
    ```
    
+1. View the condensed, graphical version of your Git log using `git adog`
+   
 1. What is the entire line of output for the most recent entry produced
    by your new `git adog` command?
 
@@ -131,8 +133,10 @@ command depends on your present working directory), then please note that contex
    not do the steps above for each and every error as 
    _errors are expected_ if you perform the steps correctly.
 
-1. Commit the changes to your local copy of the exercise repository. 
-   Be sure to include a good log message.
+1. View the condensed, graphical version of your Git log using `git adog`
+   
+1. What is the entire line of output for the most recent entry produced
+   by your new `git adog` command?
 
 **CHECKPOINT**
 
@@ -141,6 +145,9 @@ command depends on your present working directory), then please note that contex
    in their [reply to another user's post](https://stackoverflow.com/a/35075021).  
    
    ![ADOG](https://i.stack.imgur.com/ElVkf.jpg)
+   
+1. The StackOverflow user [fracz](https://stackoverflow.com/users/878514/fracz) suggested the `adog` alias
+   that you setup earlier in their reply to Patoshi's reply.
 
 **NOT A CHECKPOINT**
 
