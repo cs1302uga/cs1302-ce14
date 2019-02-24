@@ -58,10 +58,10 @@ command depends on your present working directory), then please note that contex
    files so that they explicitly paramterize the method to the 
    appropriate type. No raw types!
    
-1. Compile *all of the code*, including your modified `Utility` 
+1. **Compile all of the code**, including your modified `Utility` 
    class, using `bin` as the default package for compiled code. 
    Make sure you compile the classes in the proper order considering 
-   the dependencies. *When you encounter any compilation errors:*
+   the dependencies. **When you encounter any compilation errors:**
    
    1. Look at the first error reported by `javac`;
    1. Write down the entire statement that caused the error.
