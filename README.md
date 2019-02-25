@@ -129,7 +129,7 @@ command depends on your present working directory), then please note that contex
    $ git merge genericize
    ```
 
-1. Did the merge work? How do you know?
+   Did the merge work? How do you know?
    
 1. In a previous exercise, you combined the `--all`, `--decorate`,
    `--oneline`, and `--graph` options with `git log` to produce
@@ -143,16 +143,14 @@ command depends on your present working directory), then please note that contex
    ```
    
 1. View the condensed, graphical version of your Git log using `git adog`.
-   
-1. What is the entire line of output for the most recent entry produced
+   What is the entire line of output for the most recent entry produced
    by your new `git adog` command?
    
 1. Create a file called `NOTES.md`. In this file, write the signature
    of your `checkNull` method, including any annotations. Once done,
    save the file, then stage and commit the changes. You log message
-   can be something like `"added notes"`.
-   
-1. View the condensed, graphical version of your Git log using `git adog`.
+   can be something like `"added notes"`. Finally, view the condensed, 
+   graphical version of your Git log using `git adog`.
 
 **CHECKPOINT**
 
@@ -207,8 +205,7 @@ command depends on your present working directory), then please note that contex
    (`master`).
 
 1. View the condensed, graphical version of your Git log using `git adog`
-   
-1. What is the entire line of output for the most recent entry produced
+   What is the entire line of output for the most recent entry produced
    by your new `git adog` command?
    
 1. If you do not intend to revisit the `genericize` branch by name, then
