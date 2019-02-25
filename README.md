@@ -111,7 +111,7 @@ command depends on your present working directory), then please note that contex
    (`master`) using the following command:
    
    ```
-   $ git merge test_genericize
+   $ git merge genericize
    ```
 
 1. Did the merge work? How do you know?
