@@ -58,7 +58,7 @@ command depends on your present working directory), then please note that contex
    $ git checkout -b genericize
    ```
    
-   When you create a branch, it is as if Git makes a copy of the current
+   **EXPLANATION:** When you create a branch, it is as if Git makes a copy of the current
    branch without the `cp` command! If you checkout the branch, then stage
    and commit changes, then those commits do not affect the `master` (main)
    branch. In this way, you can work on adding new features or fixing bugs
