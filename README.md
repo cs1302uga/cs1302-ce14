@@ -1,9 +1,11 @@
 
-# cs1302-ce14 TBD
+# cs1302-ce14 Genericize is a Real Word
 
-> Quote TBD
+> Brevity is the soul of wit. 
+> **--Polonius, _Hamlet_ by William Shakespeare**
 
-This class exercise covers introduces the reader to generic methods and .
+This class exercise covers introduces the reader to generic methods and upper bounds.
+It also provides a small demonstration of branched development.
 
 ## References
 
