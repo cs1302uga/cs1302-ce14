@@ -49,6 +49,17 @@ command depends on your present working directory), then please note that contex
       parameter of this method? 
       List two two or three examples.
    
+1. Create and checkout a branch called `genericize` to perform
+   the work related to this checkpoint. You can do this using
+   the following command:
+   
+   ```
+   $ git checkout -b genericize
+   ```
+   
+1. Confirm that you are on the new branch using `git status` and/or
+   `git branch`.
+   
 1. Rewrite and document the `checkNull` method so that it only 
    accepts references that are either all the same type or all 
    below a specific type in a hierarchy. **Keep the following in 
@@ -66,7 +77,7 @@ command depends on your present working directory), then please note that contex
    1. Look at the first error reported by `javac`;
    1. Write down the entire statement that caused the error.
    1. Write the error message down in your notes;
-   1. Reflect on the error message, then consult the references
+   1. If the error is related to heap polution, then consult the references
       mentioned at the top of this exercise for a potential
 	  solution; 
    1. Fix the error;
@@ -81,6 +92,26 @@ command depends on your present working directory), then please note that contex
 
 1. What is the complete signature of your modified `checkNull`
    method?
+   
+1. Now that everything on this branch compiles, ensure that all changes 
+   in the current branch have been staged and committed. After that, 
+   checkout the `master` branch using the following command:
+   
+   ```
+   $ git checkout master
+   ```
+   
+1. Examine the `checkNull` method in the `cs1302.Utility` 
+   class. What do you notice?
+   
+1. Merge changes from the `genericize` branch into the current branch
+   (`master`) using the following command:
+   
+   ```
+   $ git merge genericize
+   ```
+
+1. Did the merge work? How do you know?
    
 1. In a previous exercise, you combined the `--all`, `--decorate`,
    `--oneline`, and `--graph` options with `git log` to produce
@@ -99,6 +130,16 @@ command depends on your present working directory), then please note that contex
    by your new `git adog` command?
 
 **CHECKPOINT**
+
+1. Create and checkout a branch called `test_genericize` to perform
+   the work related to this checkpoint. 
+   
+   ```
+   $ git checkout -b genericize
+   ``` 
+   
+1. Confirm that you are on the new branch using `git status` and/or
+   `git branch`.
 
 1. Write and document a `Driver` class in the `cs1302.ce14` package. 
    The `main` method should demonstrate that your `checkNull` method 
@@ -132,6 +173,13 @@ command depends on your present working directory), then please note that contex
    They will not sign off on this checkpoint if you do 
    not do the steps above for each and every error as 
    _errors are expected_ if you perform the steps correctly.
+
+1. Now that everything on this branch compiles, ensure that all changes 
+   in the current branch have been staged and committed, then 
+   checkout the `master` branch.
+   
+1. Merge changes from the `test_genericize` branch into the current branch
+   (`master`).
 
 1. View the condensed, graphical version of your Git log using `git adog`
    
