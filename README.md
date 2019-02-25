@@ -108,7 +108,7 @@ command depends on your present working directory), then please note that contex
    (`master`) using the following command:
    
    ```
-   $ git merge genericize
+   $ git merge test_genericize
    ```
 
 1. Did the merge work? How do you know?
@@ -131,8 +131,8 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
-1. Create and checkout a branch called `test_genericize` to perform
-   the work related to this checkpoint. 
+1. Checkout the existing branch called `genericize` you created in the
+   previous checkpoint to perform the work related to this checkpoint. 
    
    ```
    $ git checkout -b genericize
@@ -178,13 +178,17 @@ command depends on your present working directory), then please note that contex
    in the current branch have been staged and committed, then 
    checkout the `master` branch.
    
-1. Merge changes from the `test_genericize` branch into the current branch
+1. Merge changes from the `genericize` branch into the current branch
    (`master`).
 
 1. View the condensed, graphical version of your Git log using `git adog`
    
 1. What is the entire line of output for the most recent entry produced
    by your new `git adog` command?
+   
+1. If you do not intend to revisit the `genericize` branch by name, then
+   you can safely delete it using `git branch -d` followed by the branch
+   name. The changes have already been merged into `master`.
 
 **CHECKPOINT**
 
