@@ -125,7 +125,7 @@ command depends on your present working directory), then please note that contex
    $ git config --global alias.adog "log --all --decorate --oneline --graph"
    ```
    
-1. View the condensed, graphical version of your Git log using `git adog`
+1. View the condensed, graphical version of your Git log using `git adog`.
    
 1. What is the entire line of output for the most recent entry produced
    by your new `git adog` command?
