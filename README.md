@@ -58,19 +58,39 @@ command depends on your present working directory), then please note that contex
    $ git checkout -b genericize
    ```
    
+   When you create a branch, it is as if Git makes a copy of the current
+   branch without the `cp` command! If you checkout the branch, then stage
+   and commit changes, then those commits do not affect the `master` (main)
+   branch. In this way, you can work on adding new features or fixing bugs
+   until you are confident that they work. Towards the end of this checkpoint,
+   you will checkout the `master` branch, and it will appear as it did when
+   branched earlier in the checkpoint. Then, you will merge changes from the
+   `genericize` branch into the currently checked out branch. You can do the
+   same kind of thing in your projects: i) branch to work on a new feature;
+   ii) stage and commit as you test that feature; then iii) once confident,
+   checkout `master` and merge your branch commits into `master`. This way,
+   your `master` branch is always in a good state. 
+   
 1. Confirm that you are on the desired branch using `git status` and/or
    `git branch`. 
    
 1. Rewrite and document the `checkNull` method so that it only 
    accepts references in its variadic parameter that are either all the same 
-   type or all below a specific type in a hierarchy: i) introduce a generic
-   type parameter for the method itself; then ii) use that type parameter in
-   the method parameters and, as needed, in the method itself. **Keep the following in 
-   mind:** Your implementation should only require a simple generic 
+   type or all below a specific type in a hierarchy: 
+   
+   1. introduce a generic type parameter for the method itself; then 
+   1. use that type parameter in the method parameters and, as needed, in the method itself. 
+   
+   **Keep the following in mind:** Your implementation should only require a simple generic 
    type parameter -- an upper bound is not needed.
    You will need to also rewrite all calls to `checkNull` in other 
    files so that they explicitly paramterize the method to the 
    appropriate type. No raw types!
+
+1. **NOTE:** When checking the next step, your instructor or PLA will look at the list of 
+   things you tried. They will not sign off on this checkpoint if you do 
+   not do the steps above for each and every error. You should have
+   a log entry for each.
    
 1. **Compile all of the code**, including your modified `Utility` 
    class, using `bin` as the default package for compiled code. 
@@ -85,14 +105,9 @@ command depends on your present working directory), then please note that contex
 	  solution; 
    1. Fix the error;
    1. Recompile; 
-   1. Stage and commit your changes using Git; and
+   1. Stage (`git add`) and commit (`git commit -m`) your changes using Git; and
    1. Repeat as needed. 
    
-   **NOTE:** Your instructor or PLA will look at the list of things
-   you tried. They will not sign off on this checkpoint if you do 
-   not do the steps above for each and every error. You should have
-   a log entry for each.
-
 1. What is the complete signature of your modified `checkNull`
    method?
    
@@ -143,6 +158,12 @@ command depends on your present working directory), then please note that contex
    
 1. Confirm that you are on the desired branch using `git status` and/or
    `git branch`.
+   
+1. **NOTE:** When checking the next step, your instructor or PLA will look 
+   at the list of things you tried. You should have a log entry for each. 
+   They will not sign off on this checkpoint if you do 
+   not do the steps above for each and every error as 
+   _errors are expected_ if you perform the steps correctly.
 
 1. Write and document a `Driver` class in the `cs1302.ce14` package. 
    The `main` method should demonstrate that your `checkNull` method 
@@ -170,12 +191,6 @@ command depends on your present working directory), then please note that contex
    1. Recompile;
    1. Stage and commit your changes using Git; and
    1. Repeat as needed. 
-   
-   **NOTE:** Your instructor or PLA will look at the list of things
-   you tried. You should have a log entry for each. 
-   They will not sign off on this checkpoint if you do 
-   not do the steps above for each and every error as 
-   _errors are expected_ if you perform the steps correctly.
 
 1. Now that everything on this branch compiles, ensure that all changes 
    in the current branch have been staged and committed, then 
