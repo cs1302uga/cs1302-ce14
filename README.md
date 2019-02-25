@@ -63,7 +63,9 @@ command depends on your present working directory), then please note that contex
    
 1. Rewrite and document the `checkNull` method so that it only 
    accepts references in its variadic parameter that are either all the same 
-   type or all below a specific type in a hierarchy. **Keep the following in 
+   type or all below a specific type in a hierarchy: i) introduce a generic
+   type parameter for the method itself; then ii) use that type parameter in
+   the method parameters and, as needed, in the method itself. **Keep the following in 
    mind:** Your implementation should only require a simple generic 
    type parameter -- an upper bound is not needed.
    You will need to also rewrite all calls to `checkNull` in other 
