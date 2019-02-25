@@ -138,7 +138,7 @@ command depends on your present working directory), then please note that contex
    $ git checkout -b genericize
    ``` 
    
-1. Confirm that you are on the new branch using `git status` and/or
+1. Confirm that you are on the desired branch using `git status` and/or
    `git branch`.
 
 1. Write and document a `Driver` class in the `cs1302.ce14` package. 
