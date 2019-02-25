@@ -75,8 +75,8 @@ command depends on your present working directory), then please note that contex
    `git branch`. 
    
 1. Rewrite and document the `checkNull` method so that it only 
-   accepts references in its variadic parameter that are either all the same 
-   type or all below a specific type in a hierarchy: 
+   accepts references in its variadic parameter that are all the same 
+   type: 
    
    1. introduce a generic type parameter for the method itself; then 
    1. use that type parameter in the method parameters and, as needed, in the method itself. 
@@ -172,10 +172,11 @@ command depends on your present working directory), then please note that contex
 
 1. Write and document a `Driver` class in the `cs1302.ce14` package. 
    The `main` method should demonstrate that your `checkNull` method 
-   only accepts references that are either all the same type or all 
-   below a specific type in a hierarchy. You may make use of the 
-   `Shape`, `Ellipse`, and `Circle` classes that are in the same 
-   package. 
+   only accepts references that all the same type. Since Java
+   allows for subtype assignment to parent variables, also check that
+   you can supply references to obects that are children of the type 
+   you specifiy. You may make use of the `Shape`, `Ellipse`, and `Circle` 
+   classes that are in the same package. 
    
    Try different statements. **If you do this properly, then 
    compile-time errors are expected** when calls to `checkNull`
