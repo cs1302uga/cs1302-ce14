@@ -7,7 +7,7 @@
 This class exercise covers introduces the reader to generic methods.
 It also provides a small demonstration of branching and merging using Git.
 
-## References
+## References and Prerequisites
 
 * Basic knowledge of Java Generics.
 * [Oracle: Generic Methods](https://docs.oracle.com/javase/tutorial/extra/generics/methods.html)
