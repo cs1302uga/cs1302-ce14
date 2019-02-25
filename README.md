@@ -59,8 +59,8 @@ command depends on your present working directory), then please note that contex
    $ git checkout -b genericize
    ```
    
-1. Confirm that you are on the new branch using `git status` and/or
-   `git branch`.
+1. Confirm that you are on the desired branch using `git status` and/or
+   `git branch`. 
    
 1. Rewrite and document the `checkNull` method so that it only 
    accepts references that are either all the same type or all 
@@ -137,7 +137,7 @@ command depends on your present working directory), then please note that contex
    previous checkpoint to perform the work related to this checkpoint. 
    
    ```
-   $ git checkout -b genericize
+   $ git checkout genericize
    ``` 
    
 1. Confirm that you are on the desired branch using `git status` and/or
