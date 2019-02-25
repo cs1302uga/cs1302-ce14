@@ -146,6 +146,13 @@ command depends on your present working directory), then please note that contex
    
 1. What is the entire line of output for the most recent entry produced
    by your new `git adog` command?
+   
+1. Create a file called `NOTES.md`. In this file, write the signature
+   of your `checkNull` method, including any annotations. Once done,
+   save the file, then stage and commit the changes. You log message
+   can be something like `"added notes"`.
+   
+1. View the condensed, graphical version of your Git log using `git adog`.
 
 **CHECKPOINT**
 
