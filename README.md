@@ -5,7 +5,7 @@
 > **--Polonius, _Hamlet_ by William Shakespeare**
 
 This class exercise covers introduces the reader to generic methods.
-It also provides a small demonstration of branched development.
+It also provides a small demonstration of branching and merging using Git.
 
 ## References
 
