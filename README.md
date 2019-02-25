@@ -4,7 +4,7 @@
 > Brevity is the soul of wit. 
 > **--Polonius, _Hamlet_ by William Shakespeare**
 
-This class exercise covers introduces the reader to generic methods and upper bounds.
+This class exercise covers introduces the reader to generic methods.
 It also provides a small demonstration of branched development.
 
 ## References
