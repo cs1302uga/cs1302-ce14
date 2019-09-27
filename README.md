@@ -158,15 +158,31 @@ command depends on your present working directory), then please note that contex
    |-----------|-------|------|-----|
 
    **After each test,** ensure that all changes in the current branch have been staged 
-   and committed. The instructors and PLAs will check your Git log.
+   and committed. The instructors and PLAs will check your Git log. Here are the snippets:
    
    1. **Snippet 1:**
    
+      ```java
+      
+      ```
+   
    1. **Snippet 2:**
+   
+      ```java
+      
+      ```
    
    1. **Snippet 3:**
    
+      ```java
+      
+      ```
+   
    1. **Snippet 4:**
+   
+      ```java
+      
+      ```
 
 1. Now that everything on this branch compiles, ensure that all changes 
    in the current branch have been staged and committed, then 
