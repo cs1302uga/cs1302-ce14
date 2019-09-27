@@ -123,8 +123,8 @@ command depends on your present working directory), then please note that contex
    What is the entire line of output for the most recent entry produced
    by your new `git adog` command?
    
-1. Create a file called `NOTES.md`. In this file, write the signature
-   of your `checkNull` method, including any annotations. Once done,
+1. Create a file called `NOTES.md`. In this file, write a sentence or
+   two about your thoughts concerning this exercise. Once done,
    save the file, then stage and commit the changes. You log message
    can be something like `"added notes"`. Finally, view the condensed, 
    graphical version of your Git log using `git adog`.
@@ -161,6 +161,12 @@ command depends on your present working directory), then please note that contex
    and committed. The instructors and PLAs will check your Git log.
    
    1. **Snippet 1:**
+   
+   1. **Snippet 2:**
+   
+   1. **Snippet 3:**
+   
+   1. **Snippet 4:**
 
 1. Now that everything on this branch compiles, ensure that all changes 
    in the current branch have been staged and committed, then 
