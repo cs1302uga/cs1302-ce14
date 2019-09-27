@@ -149,7 +149,8 @@ command depends on your present working directory), then please note that contex
    you try them:
    1. **Guess:** Would `Driver.java` compile if that snippet is the only code inside of the `main` method?
    1. **Test:** Does `Driver.java` compile if that snippet is the only code inside of the `main` method?
-   1. **Why:** Why does it work or not work?
+   1. **Why:** Why does it compile or not work?
+   1. **Runtime:** When run, the program work as intended?
    
    We recommend you make a table in your notes:
    
@@ -163,25 +164,41 @@ command depends on your present working directory), then please note that contex
    1. **Snippet 1:**
    
       ```java
-      
+      String strings = new String[] { "a", "b" };
+      fill(strings, "c");
+      System.out.println(Arrays.toString(strings));
       ```
    
    1. **Snippet 2:**
    
       ```java
-      
+      String strings = new String[] { "c", "d" };
+      Driver.<String>fill(strings, "e");
+      System.out.println(Arrays.toString(strings));
       ```
    
    1. **Snippet 3:**
    
       ```java
-      
+      String strings = new String[] { "f", "g" };
+      Driver.<Object>fill(strings, "h");
+      System.out.println(Arrays.toString(strings));
       ```
    
    1. **Snippet 4:**
    
       ```java
+      String strings = new String[] { "i", "j" };
+      Driver.<String>fill(strings, 2.0);
+      System.out.println(Arrays.toString(strings));
+      ```
       
+   1. **Snippet 5:**
+   
+      ```java
+      String strings = new String[] { "i", "j" };
+      Driver.<Object>fill(strings, 2.0);
+      System.out.println(Arrays.toString(strings));
       ```
 
 1. Now that everything on this branch compiles, ensure that all changes 
