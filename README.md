@@ -201,9 +201,10 @@ command depends on your present working directory), then please note that contex
       System.out.println(Arrays.toString(strings));
       ```
 
-1. Now that everything on this branch compiles, ensure that all changes 
-   in the current branch have been staged and committed, then 
-   checkout the `master` branch.
+1. Now that your table is complete, delete the body of the `main` method,
+   make sure that everything on this branch compiles. After that,
+   ensure that all changes in the current branch have been staged and committed, 
+   then checkout the `master` branch.
    
 1. Merge changes from the `genericize` branch into the current branch
    (`master`).
