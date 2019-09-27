@@ -86,45 +86,10 @@ command depends on your present working directory), then please note that contex
 1. In the `main` method, write a few lines of code to test your method.
    Please consider the following: how will you know it worked?
 
-1. **Compile all of the code, then run it.**
-   
-   
-1. Rewrite and document the `checkNull` method so that it only 
-   accepts references in its variadic parameter that are all the same 
-   type: 
-   
-   1. introduce a generic type parameter for the method itself; then 
-   1. use that type parameter in the method parameters and, as needed, in the method itself. 
-   
-   **Keep the following in mind:** Your implementation should only require a simple generic 
-   type parameter -- an upper bound is not needed.
-   You will need to also rewrite all calls to `checkNull` in other 
-   files so that they explicitly paramterize the method to the 
-   appropriate type. No raw types!
-
-1. **NOTE:** When checking the next step, your instructor or PLA will look at the list of 
-   things you tried. They will not sign off on this checkpoint if you do 
-   not do the steps above for each and every error. You should have
-   a log entry for each.
-   
-1. **Compile all of the code**, including your modified `Utility` 
-   class, using `bin` as the default package for compiled code. 
-   Make sure you compile the classes in the proper order considering 
-   the dependencies. **When you encounter any compilation errors:**
-   
-   1. Look at the first error reported by `javac`;
-   1. Write down the entire statement that caused the error.
-   1. Write the error message down in your notes;
-   1. If the error is related to heap polution, then consult the references
-      mentioned at the top of this exercise for a potential
-	  solution; 
-   1. Fix the error;
-   1. Recompile; 
-   1. Stage (`git add`) and commit (`git commit -m`) your changes using Git; and
-   1. Repeat as needed. 
-   
-1. What is the complete signature of your modified `checkNull`
-   method?
+1. **Compile all of the code, then run it.** If you run into any issues,
+   then revisit either your `fill` implementation or the test code you
+   included in your `main` method. **Be sure that everything compiles
+   and runs as expected before continuing.**
    
 1. Now that everything on this branch compiles, ensure that all changes 
    in the current branch have been staged and committed. After that, 
@@ -133,9 +98,6 @@ command depends on your present working directory), then please note that contex
    ```
    $ git checkout master
    ```
-   
-1. Examine the `checkNull` method in the `cs1302.Utility` 
-   class. What do you notice?
    
 1. Merge changes from the `genericize` branch into the current branch
    (`master`) using the following command:
@@ -179,39 +141,26 @@ command depends on your present working directory), then please note that contex
 1. Confirm that you are on the desired branch using `git status` and/or
    `git branch`.
    
-1. **NOTE:** When checking the next step, your instructor or PLA will look 
-   at the list of things you tried. You should have a log entry for each. 
-   They will not sign off on this checkpoint if you do 
-   not do the steps above for each and every error as 
-   _errors are expected_ if you perform the steps correctly.
-
-1. Write and document a `Driver` class in the `cs1302.ce14` package. 
-   The `main` method should demonstrate that your `checkNull` method 
-   only accepts references that all the same type. Since Java
-   allows for subtype assignment to parent variables, also check that
-   you can supply references to obects that are children of the type 
-   you specifiy. You may make use of the `Shape`, `Ellipse`, and `Circle` 
-   classes that are in the same package. 
    
-   Try different statements. **If you do this properly, then 
-   compile-time errors are expected** when calls to `checkNull`
-   violate the conditions your earlier modifications adopted. 
-   In other words, the changes you made are supposed to prevent 
-   the programmer from using your method a particular way. 
-   If you encounter any compilation errors:
+1. In `Driver.java`, delete what you have written for the body of the `main` method.
+   Don't worry, it's in your repository's histoty if you want to see it later. 
    
-   1. Look at the first error reported by `javac`;
-   1. Write down the entire statement that caused the error.
-   1. Write the error message down in your notes;
-   1. In your notes, denote whether or not this error is expected;
+1. Now, for each of the code snippets below, indicate the following in your notes as
+   you try them:
+   1. **Guess:** Would `Driver.java` compile if that snippet is the only code inside of the `main` method?
+   1. **Test:** Does `Driver.java` compile if that snippet is the only code inside of the `main` method?
+   1. **Why:** Why does it work or not work?
+   
+   We recommend you make a table in your notes:
+   
+   | Snippet # | Guess | Test | Why |
+   |-----------|-------|------|-----|
+   |-----------|-------|------|-----|
 
-	  1. If **yes**, then keep the line in your code but comment it 
-	     out, and include the reason why it's expected in your notes.
-	  1. If **no**, then fix the error in the code.
-	  
-   1. Recompile;
-   1. Stage and commit your changes using Git; and
-   1. Repeat as needed. 
+   **After each test,** ensure that all changes in the current branch have been staged 
+   and committed. The instructors and PLAs will check your Git log.
+   
+   1. **Snippet 1:**
 
 1. Now that everything on this branch compiles, ensure that all changes 
    in the current branch have been staged and committed, then 
