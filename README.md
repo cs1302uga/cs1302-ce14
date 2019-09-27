@@ -38,17 +38,7 @@ command depends on your present working directory), then please note that contex
    ```
 
 ### Exercise Steps
-
-1. Examine the static `checkNull` method in the `cs1302.Utility` 
-   class. 
-
-   1. What is the minimum number of parameters that can be used 
-      when invoking this method?
-      Provide an example.
-   1. What kind of references are allowed for the variadic 
-      parameter of this method? 
-      List two two or three examples.
-   
+  
 1. Create and checkout a branch called `genericize` to perform
    the work related to this checkpoint. You can do this using
    the following command:
@@ -71,7 +61,27 @@ command depends on your present working directory), then please note that contex
    your `master` branch is always in a good state. 
    
 1. Confirm that you are on the desired branch using `git status` and/or
-   `git branch`. 
+   `git branch`. What command did you use? How do you know you're on the
+   the desired branch?
+   
+   
+1. In `Driver.java` implement the following method:
+
+   ```java
+   /**
+    * Given a reference to an array specified by {@code array}, fill each
+    * element by assigning it the value specified by {@code val}. 
+    *
+    * @param <T>    element type
+    * @param array  array to fill
+    * @param val    value to assign to each element
+    */
+   public static <T> void fill(T[] array, T val) {
+       ...
+   }
+   ```
+   
+   
    
 1. Rewrite and document the `checkNull` method so that it only 
    accepts references in its variadic parameter that are all the same 
