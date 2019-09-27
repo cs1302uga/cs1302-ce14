@@ -38,7 +38,10 @@ command depends on your present working directory), then please note that contex
    ```
 
 ### Exercise Steps
-  
+
+1. **Compile all of the supplied code,** specifiying `bin` as the default package for
+   compiled code.
+   
 1. Create and checkout a branch called `genericize` to perform
    the work related to this checkpoint. You can do this using
    the following command:
@@ -64,8 +67,7 @@ command depends on your present working directory), then please note that contex
    `git branch`. What command did you use? How do you know you're on the
    the desired branch?
    
-   
-1. In `Driver.java` implement the following method:
+1. In `Driver.java` implement the following generic method:
 
    ```java
    /**
@@ -81,6 +83,10 @@ command depends on your present working directory), then please note that contex
    }
    ```
    
+1. In the `main` method, write a few lines of code to test your method.
+   Please consider the following: how will you know it worked?
+
+1. **Compile all of the code, then run it.**
    
    
 1. Rewrite and document the `checkNull` method so that it only 
