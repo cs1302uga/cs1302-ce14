@@ -11,7 +11,6 @@ It also provides a small demonstration of branching and merging using Git.
 
 * Basic knowledge of Java Generics.
 * [Oracle: Generic Methods](https://docs.oracle.com/javase/tutorial/extra/generics/methods.html)
-* [`@SafeVarArgs` API Documentation](https://docs.oracle.com/javase/8/docs/api/java/lang/SafeVarargs.html)
 
 ## Questions
 
