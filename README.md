@@ -146,21 +146,22 @@ command depends on your present working directory), then please note that contex
    `git branch`.
    
    
-1. In `Driver.java`, delete what you have written for the body of the `main` method.
-   Don't worry, it's in your repository's histoty if you want to see it later. 
+1. In `Driver.java`, delete everything in the body of the `main` method.
+   Don't worry, it's in your repository's history if you want to see it later. 
    
 1. Now, for each of the code snippets below, indicate the following in your notes as
    you try them:
    1. **Guess:** Would `Driver.java` compile if that snippet is the only code inside of the `main` method?
    1. **Test:** Does `Driver.java` compile if that snippet is the only code inside of the `main` method?
+   1. **Runtime:** If the program compiled, does the program work as intended? If the program won't compile,
+      write `No` for this entry.
    1. **Why:** Why does it compile or not work?
-   1. **Runtime:** When run, the program work as intended?
    
    We recommend you make a table in your notes:
    
-   | Snippet # | Guess | Test | Why |
-   |-----------|-------|------|-----|
-   |-----------|-------|------|-----|
+   | Snippet # | Guess | Test | Runtime | Why |
+   |-----------|-------|------|---------|-----|
+   |-----------|-------|------|---------|-----|
 
    **After each test,** ensure that all changes in the current branch have been staged 
    and committed. The instructors and PLAs will check your Git log. Here are the snippets:
@@ -168,7 +169,7 @@ command depends on your present working directory), then please note that contex
    1. **Snippet 1:**
    
       ```java
-      String strings = new String[] { "a", "b" };
+      String[] strings = new String[] { "a", "b" };
       fill(strings, "c");
       System.out.println(Arrays.toString(strings));
       ```
@@ -176,7 +177,7 @@ command depends on your present working directory), then please note that contex
    1. **Snippet 2:**
    
       ```java
-      String strings = new String[] { "c", "d" };
+      String[] strings = new String[] { "c", "d" };
       Driver.<String>fill(strings, "e");
       System.out.println(Arrays.toString(strings));
       ```
@@ -184,7 +185,7 @@ command depends on your present working directory), then please note that contex
    1. **Snippet 3:**
    
       ```java
-      String strings = new String[] { "f", "g" };
+      String[] strings = new String[] { "f", "g" };
       Driver.<Object>fill(strings, "h");
       System.out.println(Arrays.toString(strings));
       ```
@@ -192,7 +193,7 @@ command depends on your present working directory), then please note that contex
    1. **Snippet 4:**
    
       ```java
-      String strings = new String[] { "i", "j" };
+      String[] strings = new String[] { "i", "j" };
       Driver.<String>fill(strings, 2.0);
       System.out.println(Arrays.toString(strings));
       ```
@@ -200,7 +201,7 @@ command depends on your present working directory), then please note that contex
    1. **Snippet 5:**
    
       ```java
-      String strings = new String[] { "i", "j" };
+      String[] strings = new String[] { "i", "j" };
       Driver.<Object>fill(strings, 2.0);
       System.out.println(Arrays.toString(strings));
       ```
@@ -216,6 +217,9 @@ command depends on your present working directory), then please note that contex
 1. View the condensed, graphical version of your Git log using `git adog`
    What is the entire line of output for the most recent entry produced
    by your new `git adog` command?
+
+1. Looking at the graphical version of your Git log, can you tell which branch
+   you were on when you committed the `NOTES.md` file? How can you tell?
    
 1. If you do not intend to revisit the `genericize` branch by name, then
    you can safely delete it using `git branch -d` followed by the branch
