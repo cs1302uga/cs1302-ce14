@@ -80,11 +80,13 @@ command depends on your present working directory), then please note that contex
     */
    public static <T> void fill(T[] array, T val) {
        ...
-   }
+   } // fill
    ```
    
 1. In the `main` method, write a few lines of code to test your method.
-   Please consider the following: how will you know it worked?
+   In your notes, write how you know it is properly working. Try an example
+   where you think the types of the actual parameters will work and one where
+   you expect it not to work.
 
 1. **Compile all of the code, then run it.** If you run into any issues,
    then revisit either your `fill` implementation or the test code you
@@ -98,9 +100,11 @@ command depends on your present working directory), then please note that contex
    ```
    $ git checkout master
    ```
-   
-1. Merge changes from the `genericize` branch into the current branch
-   (`master`) using the following command:
+
+1. Take a look at `Driver.java`. Notice that you have reverted back to the
+   original code. The new, updated, code is on the other branch. To incorporate
+   the changes (merge the changes) from the `genericize` branch into the current 
+   (`master`) branch, use the following command:
    
    ```
    $ git merge genericize
