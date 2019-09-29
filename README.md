@@ -251,7 +251,7 @@ command depends on your present working directory), then please note that contex
       System.out.println(Arrays.toString(ellipses));
       ```
    
-   1. **Snippet 4:**
+   1. **Snippet 5:**
    
       ```java
       String[] strings = new String[] { "i", "j" };
@@ -259,7 +259,7 @@ command depends on your present working directory), then please note that contex
       System.out.println(Arrays.toString(strings));
       ```
       
-   1. **Snippet 5:**
+   1. **Snippet 6:**
    
       ```java
       String[] strings = new String[] { "i", "j" };
