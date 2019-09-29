@@ -232,18 +232,19 @@ command depends on your present working directory), then please note that contex
    ```java
    /**
     * Given a reference to an array specified by {@code array} and a reference
-    * specified by {@code val}, finds the first object in {@code array} with the
-    * same area as the object referenced by {@code val} and returns the matching
-    * object from the array. Returns {@code null} if no match is found.
+    * specified by {@code val}, finds the first object {@code o} in {@code array} 
+    * such that {@code Math.abs(val.area() - o.area()) < delta}, then returns its
+    * reference; returns {@code null} if no match is found. 
     *
     * @param <T>    element type
     * @param array  array to search
     * @param val    reference to the object to match
+    * @param delta  difference that is considered unequal
     * @return a reference to the object from {@code array} with an area matching
     * that of the object referenced by {@code val} or {@code null} if no match
     * is found.
     */
-   public static <T extends Shape> T findMatchingArea(T[] array, T val) {
+   public static <T extends Shape> T findMatchingArea(T[] array, T val, double delta) {
        ...
    } // findMatchingArea
    ```
