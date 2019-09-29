@@ -8,12 +8,19 @@ import java.util.Arrays;
 public class Driver {
 
     public static void main(String[] args) {
-        Shape[] s = new Shape[] {
+
+        Shape[] shapes = new Shape[] {
             new Circle(4.5),
             new Ellipse(3.2, 2.8),
             new Circle(2.3)
         };
 
+        Circle[] circles = new Circle[] {
+            new Circle(4.5),
+            new Circle(1.0),
+            new Circle(2.3)
+        };        
+        
     } // main
 
 } // Driver
