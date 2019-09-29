@@ -51,6 +51,9 @@ public abstract class Shape {
      */
     public abstract double getPerimeter();
     
+    /**
+     * {@inheritDoc}
+     */
     @Override
     public String toString() {
         return String.format("%s(area = %f)", getName(), getArea());
