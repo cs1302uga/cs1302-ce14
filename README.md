@@ -7,6 +7,8 @@
 This class exercise covers introduces the reader to generic methods.
 It also provides a small demonstration of branching and merging using Git.
 
+## NOTE ADD LOs
+
 ## References and Prerequisites
 
 * Basic knowledge of Java Generics.
@@ -145,9 +147,9 @@ command depends on your present working directory), then please note that contex
 1. Confirm that you are on the desired branch using `git status` and/or
    `git branch`.
    
-   
-1. In `Driver.java`, delete everything in the body of the `main` method.
-   Don't worry, it's in your repository's history if you want to see it later. 
+1. In `Driver.java`, delete the test code that you wrote in the body of the `main` method.
+   Don't worry, it's in your repository's history if you want to see it later. Save,
+   then commit your change.
    
 1. Now, for each of the code snippets below, indicate the following in your notes as
    you try them:
@@ -189,6 +191,57 @@ command depends on your present working directory), then please note that contex
       Driver.<Object>fill(strings, "h");
       System.out.println(Arrays.toString(strings));
       ```
+1. Now that your table is complete for this checkpoint,
+   make sure that everything on this branch compiles. After that,
+   ensure that all changes in the current branch have been staged and committed, 
+   then checkout the `master` branch.
+   
+1. Merge changes from the `genericize` branch into the current branch
+   (`master`).
+
+1. View the condensed, graphical version of your Git log using `git adog`
+   What is the entire line of output for the most recent entry produced
+   by your new `git adog` command?
+
+1. Looking at the graphical version of your Git log, can you tell which branch
+   you were on when you committed the `NOTES.md` file? How can you tell?
+   
+1. Modify `NOTES.md` to include some more thoughts concerning this exercise. 
+   Once done, save the file, then stage and commit the changes. You log message
+   can be something like `"added more notes"`.
+   
+**CHECKPOINT**
+
+1. Checkout the existing branch called `genericize` you created earlier 
+   to perform the work related to this checkpoint. 
+   
+   ```
+   $ git checkout genericize
+   ``` 
+   
+1. Confirm that you are on the desired branch using `git status` and/or
+   `git branch`.
+   
+1. In `Driver.java`, delete any remaining test code that you wrote in the body of the `main` 
+   method (leave the arrays). Don't worry, it's in your repository's history if you want to 
+   see it later. Save, then commit your change.
+   
+1. Now, for each of the code snippets below, indicate the following in your notes as
+   you try them:
+   1. **Guess:** Would `Driver.java` compile if that snippet is the only code inside of the `main` method?
+   1. **Test:** Does `Driver.java` compile if that snippet is the only code inside of the `main` method?
+   1. **Runtime:** If the program compiled, does the program work as intended? If the program won't compile,
+      write `No` for this entry.
+   1. **Why:** Why does it compile or not work?
+   
+   We recommend you make a table in your notes:
+   
+   | Snippet # | Guess | Test | Runtime | Why |
+   |-----------|-------|------|---------|-----|
+   |-----------|-------|------|---------|-----|
+
+   **After each test,** ensure that all changes in the current branch have been staged 
+   and committed. The instructors and PLAs will check your Git log. Here are the snippets: 
    
    1. **Snippet 4:**
    
@@ -206,26 +259,25 @@ command depends on your present working directory), then please note that contex
       System.out.println(Arrays.toString(strings));
       ```
 
-1. Now that your table is complete, delete the body of the `main` method,
+1. Now that your table is complete for this checkpoint,
    make sure that everything on this branch compiles. After that,
    ensure that all changes in the current branch have been staged and committed, 
    then checkout the `master` branch.
    
 1. Merge changes from the `genericize` branch into the current branch
    (`master`).
+   
+1. Modify `NOTES.md` to include some more thoughts concerning this exercise. 
+   Once done, save the file, then stage and commit the changes. You log message
+   can be something like `"added even more notes"`.
 
 1. View the condensed, graphical version of your Git log using `git adog`
    What is the entire line of output for the most recent entry produced
    by your new `git adog` command?
-
-1. Looking at the graphical version of your Git log, can you tell which branch
-   you were on when you committed the `NOTES.md` file? How can you tell?
-   
+  
 1. If you do not intend to revisit the `genericize` branch by name, then
    you can safely delete it using `git branch -d` followed by the branch
    name. The changes have already been merged into `master`.
-
-
 
 <hr/>
 
