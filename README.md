@@ -135,7 +135,7 @@ command depends on your present working directory), then please note that contex
    can be something like `"added notes"`. Finally, view the condensed, 
    graphical version of your Git log using `git adog`.
 
-**CHECKPOINT**
+**CHECKPOINT 1**
 
 1. Checkout the existing branch called `genericize` you created in the
    previous checkpoint to perform the work related to this checkpoint. 
@@ -210,7 +210,7 @@ command depends on your present working directory), then please note that contex
    Once done, save the file, then stage and commit the changes. You log message
    can be something like `"added more notes"`.
    
-**CHECKPOINT**
+**CHECKPOINT 2**
 
 1. Checkout the existing branch called `genericize` you created earlier 
    to perform the work related to this checkpoint. 
@@ -287,7 +287,7 @@ command depends on your present working directory), then please note that contex
    you can safely delete it using `git branch -d` followed by the branch
    name. The changes have already been merged into `master`.
 
-**CHECKPOINT**
+**CHECKPOINT 3**
 
 1. The combination of options for the `git adog` command that you created earlier
    was popularized by a StackOverflow user named [Patoshi パトシ](https://stackoverflow.com/users/1642231/patoshi-パトシ)
