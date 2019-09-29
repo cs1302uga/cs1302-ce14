@@ -144,12 +144,12 @@ command depends on your present working directory), then please note that contex
    $ git checkout genericize
    ``` 
    
-1. Confirm that you are on the desired branch using `git status` and/or
+   Confirm that you are on the desired branch using `git status` and/or
    `git branch`.
    
-1. In `Driver.java`, delete the test code that you wrote in the body of the `main` method.
-   Don't worry, it's in your repository's history if you want to see it later. Save,
-   then commit your change.
+1. In `Driver.java`, delete the test code that you wrote in the body of the `main` method
+   (leave the arrays). Don't worry, it's in your repository's history if you want to see it later. 
+   Save, then commit your change.
    
 1. Now, for each of the code snippets below, indicate the following in your notes as
    you try them:
@@ -219,7 +219,7 @@ command depends on your present working directory), then please note that contex
    $ git checkout genericize
    ``` 
    
-1. Confirm that you are on the desired branch using `git status` and/or
+   Confirm that you are on the desired branch using `git status` and/or
    `git branch`.
    
 1. In `Driver.java`, delete any remaining test code that you wrote in the body of the `main` 
