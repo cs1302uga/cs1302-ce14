@@ -50,5 +50,10 @@ public abstract class Shape {
      * @return the perimeter of this shape
      */
     public abstract double getPerimeter();
+    
+    @Override
+    public String toString() {
+        return String.format("%s(area = %f)", getName(), getArea());
+    } // toString
 
 } // Shape
