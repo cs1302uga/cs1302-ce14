@@ -210,9 +210,19 @@ command depends on your present working directory), then please note that contex
 1. Looking at the graphical version of your Git log, can you tell which branch
    you were on when you committed the `NOTES.md` file? How can you tell?
    
-1. Modify `NOTES.md` to include some more thoughts concerning this exercise. 
-   Once done, save the file, then stage and commit the changes. You log message
-   can be something like `"added more notes"`.
+1. Consider the following method signatures:
+
+   ```java
+   public static <T> void fill(T[] array, T val) 
+   public static void fill(Object[] array, Object val)
+   ```
+   
+   In `NOTES.md`: 
+      1. Clearly and thoroughly describe the differences between these two
+         signatures. 
+      1. Explain why the non-generic version is more error-prone.
+
+   Once done, save the file, then stage and commit the changes. 
    
 **CHECKPOINT 2**
 
