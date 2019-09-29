@@ -248,6 +248,23 @@ command depends on your present working directory), then please note that contex
        ...
    } // findMatchingArea
    ```
+   
+   1. **Snippet Example:**
+   
+   1. **Snippet 1:**
+   
+      ```java
+      Rectangle a = findMatchingArea(rectangles, new Square(2.0));
+      Square b    = findMatchingArea(rectangles, new Square(2.0));
+      Shape c     = findMatchingArea(rectangles, new Square(2.0));
+      ```
+   
+   1. **Snippet 1:**
+   
+   1. **Snippet 1:**
+   
+   1. **Snippet 1:**
+   
 
 1. In the `main` method, write a few lines of code to test your method.
    In your notes, write how you know it is properly working. Try an example
