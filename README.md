@@ -287,6 +287,19 @@ command depends on your present working directory), then please note that contex
    you can safely delete it using `git branch -d` followed by the branch
    name. The changes have already been merged into `master`.
 
+**CHECKPOINT**
+
+1. The combination of options for the `git adog` command that you created earlier
+   was popularized by a StackOverflow user named [Patoshi パトシ](https://stackoverflow.com/users/1642231/patoshi-パトシ)
+   in their [reply to another user's post](https://stackoverflow.com/a/35075021).  
+   
+   ![ADOG](https://i.stack.imgur.com/ElVkf.jpg)
+   
+1. The StackOverflow user [fracz](https://stackoverflow.com/users/878514/fracz) suggested the `adog` alias
+   that you setup earlier in their reply to Patoshi's reply.
+
+**NOT A CHECKPOINT**
+
 <hr/>
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
