@@ -187,9 +187,9 @@ command depends on your present working directory), then please note that contex
    1. **Snippet 3:**
    
       ```java
-      String[] strings = new String[] { "f", "g" };
-      Driver.<Object>fill(strings, "h");
-      System.out.println(Arrays.toString(strings));
+      Ellipse[] ellipses = new Ellipse[] { null, null };
+      Driver.<Ellipse>fill(ellipses, new Circle(1.0));
+      System.out.println(Arrays.toString(ellipses));
       ```
 1. Now that your table is complete for this checkpoint,
    make sure that everything on this branch compiles. After that,
@@ -242,6 +242,14 @@ command depends on your present working directory), then please note that contex
 
    **After each test,** ensure that all changes in the current branch have been staged 
    and committed. The instructors and PLAs will check your Git log. Here are the snippets: 
+   
+   1. **Snippet 4:**
+   
+      ```java
+      Ellipse[] ellipses = new Ellipse[] { null, null };
+      Driver.<Shape>fill(ellipses, new Square(1.0));
+      System.out.println(Arrays.toString(ellipses));
+      ```
    
    1. **Snippet 4:**
    
