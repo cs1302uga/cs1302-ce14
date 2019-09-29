@@ -227,6 +227,42 @@ command depends on your present working directory), then please note that contex
 
 **CHECKPOINT**
 
+1. In `Driver.java` implement the following generic method:
+
+   ```java
+   /**
+    * Given a reference to an array specified by {@code array} and a reference
+    * specified by {@code val}, finds the first object in {@code array} with the
+    * same area as the object referenced by {@code val} and returns the matching
+    * object from the array. Returns {@code null} if no match is found.
+    *
+    * @param <T>    element type
+    * @param array  array to search
+    * @param val    reference to the object to match
+    * @return a reference to the object from {@code array} with an area matching
+    * that of the object referenced by {@code val} or {@code null} if no match
+    * is found.
+    */
+   public static <T extends Shape> T findMatchingArea(T[] array, T val) {
+       ...
+   } // findMatchingArea
+   ```
+
+1. In the `main` method, write a few lines of code to test your method.
+   In your notes, write how you know it is properly working. Try an example
+   where you think the types of the actual parameters will work and one where
+   you expect it not to work.
+
+1. **Compile all of the code, then run it.** If you run into any issues,
+   then revisit either your `fill` implementation or the test code you
+   included in your `main` method. **Be sure that everything compiles
+   and runs as expected before continuing.**
+   
+1. Now that everything on this branch compiles, ensure that all changes 
+   in the current branch have been staged and committed. 
+
+**CHECKPOINT**
+
 1. The combination of options for the `git adog` command that you created earlier
    was popularized by a StackOverflow user named [Patoshi パトシ](https://stackoverflow.com/users/1642231/patoshi-パトシ)
    in their [reply to another user's post](https://stackoverflow.com/a/35075021).  
