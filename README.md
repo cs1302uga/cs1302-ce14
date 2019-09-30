@@ -155,7 +155,9 @@ command depends on your present working directory), then please note that contex
    (leave the arrays). Don't worry, it's in your repository's history if you want to see it later. 
    Save, then commit your change.
    
-1. Now, for each of the code snippets below, indicate the following in your notes as
+1. In this step, you will test a series of code snippets. **After each test,** ensure that all changes 
+   in the current branch have been staged and committed (one commit per snippet). The instructors and 
+   PLAs will check your Git log. Also, for each of the snippets below, indicate the following in your notes as
    you try them:
    1. **Guess:** Would `Driver.java` compile if that snippet is the only code inside of the `main` method?
    1. **Test:** Does `Driver.java` compile if that snippet is the only code inside of the `main` method?
@@ -168,9 +170,6 @@ command depends on your present working directory), then please note that contex
    | Snippet # | Guess | Test | Runtime | Why |
    |-----------|-------|------|---------|-----|
    |-----------|-------|------|---------|-----|
-
-   **After each test,** ensure that all changes in the current branch have been staged 
-   and committed. The instructors and PLAs will check your Git log. Here are the snippets:
    
    1. **Snippet 1:**
    
