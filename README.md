@@ -1,8 +1,10 @@
 
 # cs1302-ce14 Genericize is a Real Word
 
-> Brevity is the soul of wit. 
-> **--Polonius, _Hamlet_ by William Shakespeare**
+![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+
+> Moon's haunted. 
+> **--Astronaut**
 
 This class exercise covers introduces the reader to generic methods.
 It also provides a small demonstration of branching and merging using Git.
