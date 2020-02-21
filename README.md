@@ -17,7 +17,8 @@ update source code in a multi-programmer software solution.
 
 ## References and Prerequisites
 
-* Basic knowledge of Java Generics.
+* [1302 Generic Classes Tutorial](https://github.com/cs1302uga/cs1302-tutorials/blob/master/generics/generic-classes/generic-classes.md)
+* [1302 Generic Methods Reading](https://github.com/cs1302uga/cs1302-tutorials/blob/master/generics/generic-methods/generic-methods.md)
 * [Oracle: Generic Methods](https://docs.oracle.com/javase/tutorial/extra/generics/methods.html)
 
 ## Questions
