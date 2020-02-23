@@ -2,6 +2,8 @@
 # cs1302-ce14 Genericize is a Real Word
 
 ![Approved for: Fall 2019](https://img.shields.io/badge/Approved%20for-Fall%202019-brightgreen)
+<!--![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
+![Max Group Size: 3](https://img.shields.io/badge/Max%20Group%20Size-3-important)-->
 
 > Moon's haunted. 
 > **--Astronaut**
@@ -101,7 +103,9 @@ command depends on your present working directory), then please note that contex
    then revisit either your `fill` implementation or the test code you
    included in your `main` method. **Be sure that everything compiles
    and runs as expected before continuing.**
-   
+
+1. Make sure that all of the code you wrote passes `checkstyle`.
+
 1. Now that everything on this branch compiles, ensure that all changes 
    in the current branch have been staged and committed. After that, 
    checkout the `master` branch using the following command:
@@ -121,7 +125,7 @@ command depends on your present working directory), then please note that contex
 
    Did the merge work? How do you know?
    
-1. In a previous exercise, you combined the `--all`, `--decorate`,
+1. **All Group Members** In a previous exercise, you combined the `--all`, `--decorate`,
    `--oneline`, and `--graph` options with `git log` to produce
    a condensed, graphical version of the Git log. While you
    **are expected to remember these options**, it is tiresome to
