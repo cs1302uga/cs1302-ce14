@@ -1,8 +1,6 @@
-
 # cs1302-ce14 Genericize is a Real Word
 
-![Approved for: Spring 2020](https://img.shields.io/badge/Approved%20for-Spring%202020-blue)
-![Max Group Size: 3](https://img.shields.io/badge/Max%20Group%20Size-3-important)
+![Approved for: Fall 2020](https://img.shields.io/badge/Approved%20for-Fall%202020-blueviolet)
 
 > Moon's haunted. 
 > **--Astronaut**
@@ -25,15 +23,17 @@ update source code in a multi-programmer software solution.
 ## Questions
 
 In your notes, clearly answer the following questions. These instructions assume that you are 
-logged into the Nike server. 
+logged into the Odin server. 
 
 **NOTE:** If a step requires you to enter in a command, please provide in your notes the full 
 command that you typed to make the related action happen. If context is necessary (e.g., the 
 command depends on your present working directory), then please note that context as well.
 
-### Getting Started
+## Exercise Steps
 
-1. Use Git to clone the repository for this exercise onto Nike into a subdirectory called `cs1302-ce14`:
+### Checkpoint 1 Steps
+
+1. Use Git to clone the repository for this exercise onto Odin into a subdirectory called `cs1302-ce14`:
 
    ```
    $ git clone --depth 1 https://github.com/cs1302uga/cs1302-ce14.git
@@ -46,8 +46,6 @@ command depends on your present working directory), then please note that contex
    ```
    $ find src
    ```
-
-### Exercise Steps
 
 1. **Compile all of the supplied code,** specifiying `bin` as the default package for
    compiled code.
@@ -145,7 +143,13 @@ command depends on your present working directory), then please note that contex
    can be something like `"added notes"`. Finally, view the condensed, 
    graphical version of your Git log using `git adog`.
 
-**CHECKPOINT 1**
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-1-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 2 Steps
 
 1. Checkout the existing branch called `genericize` you created in the
    previous checkpoint to perform the work related to this checkpoint. 
@@ -229,7 +233,13 @@ command depends on your present working directory), then please note that contex
 
    Once done, save the file, then stage and commit the changes. 
    
-**CHECKPOINT 2**
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-2-success?style=for-the-badge)
+
+<hr/>
+
+### Checkpoint 3 Steps
 
 1. Checkout the existing branch called `genericize` you created earlier 
    to perform the work related to this checkpoint. 
@@ -306,7 +316,55 @@ command depends on your present working directory), then please note that contex
    you can safely delete it using `git branch -d` followed by the branch
    name. The changes have already been merged into `master`.
 
-**CHECKPOINT 3**
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished%20Checkpoint-3-success?style=for-the-badge)
+
+<hr/>
+
+### Submission Steps
+
+**Each student needs to individually submit their own work.**
+
+1. Create a plain text file called `SUBMISSION.md` directly inside the `cs1302-ce14`
+   directory with the following information.
+
+   1. Your name and UGA ID number;
+   1. Collaborator names, if any; and
+   1. If you generated the API documentation website, include the full link to the site.
+   
+   Here is an example of the contents of `SUBMISSION.md`.
+   
+   ```
+   1. Sally Smith (811-000-999)
+   2. Collaborators: Joe Allen, Stacie Mack
+   3. https://webwork.cs.uga.edu/~user/cs1302-ce14-doc
+   ```
+
+1. Change directories to the parent of `cs1302-ce14` (e.g., `cd ..` from `cs1302-ce14`). If you would like
+   to make a backup tar file, the instructions are in the submissions steps for [ce02](https://github.com/cs1302uga/cs1302-ce02).
+   We won't repeat those steps here and you can view them as optional.
+   
+1. Use the `submit` command to submit this exercise to `csci-1302`:
+   
+   ```
+   $ submit cs1302-ce14 csci-1302
+   ```
+   
+   Read the output of the submit command very carefully. If there is an error while submitting, then it will displayed 
+   in that output. Additionally, if successful, the submit command creates a new receipt file in the directory you 
+   submitted. The receipt file begins with rec and contains a detailed list of all files that were successfully submitted. 
+   Look through the contents of the rec file and always remember to keep that file in case there is an issue with your submission.
+
+   **Note:** You must be on Odin to submit.
+
+<hr/>
+
+![CP](https://img.shields.io/badge/Just%20Finished-Submission-success?style=for-the-badge)
+
+<hr/>
+
+### Bonus
 
 1. The combination of options for the `git adog` command that you created earlier
    was popularized by a StackOverflow user named [Patoshi パトシ](https://stackoverflow.com/users/1642231/patoshi-パトシ)
